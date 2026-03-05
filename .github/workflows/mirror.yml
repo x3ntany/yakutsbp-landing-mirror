@@ -9,7 +9,7 @@ jobs:
   mirror:
     runs-on: ubuntu-latest
     steps:
-      - name: Scrape compiled site
+      - name: Scrape compiled site and fix SPA
         run: |
           wget --mirror \
                --convert-links \
@@ -18,7 +18,11 @@ jobs:
                --no-host-directories \
                -e robots=off \
                -P ./public \
-               "https://yakutsbp-landing.pages.dev/"
+               "https://yakutsbp-landing.pages.dev/" || true
+               
+          wget -q -O ./public/settings.json "https://yakutsbp-landing.pages.dev/settings.json"
+          # wget -q -O ./public/locales/ru.json "https://yakutsbp-landing.pages.dev/locales/ru.json" --force-directories
+          cp ./public/index.html ./public/404.html
                
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
