@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Loading...</title>
+  <meta id="meta-desc" name="description" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="custom-track" id="main-track"><div class="custom-thumb" id="main-thumb"></div></div>
+
+  <div class="ambient-bg">
+    <div class="ambient-blob blob-1"></div>
+    <div class="ambient-blob blob-2"></div>
+    <div class="ambient-blob blob-3"></div>
+  </div>
+
+  <nav class="capsule-wrapper glass-panel top" id="nav-capsule">
+    <a href="index.html#" class="capsule-brand capsule-item skeleton" id="ui-brand" style="--sk-w: 75px;"></a>
+    <div class="desktop-links flex-center">
+      <a href="index.html#features" class="capsule-item skeleton" id="nav-features" style="--sk-w: 95px;"></a>
+      <a href="index.html#compare" class="capsule-item skeleton" id="nav-compare" style="--sk-w: 85px;"></a>
+      <a href="index.html#faq" class="capsule-item skeleton" id="nav-faq" style="--sk-w: 35px;"></a>
+    </div>
+    <button class="burger-btn flex-center" id="burger-btn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- ИСПРАВЛЕНО ТУТ: добавлен класс mobile-menu -->
+  <div class="overlay mobile-menu flex-center col" id="mobile-menu">
+    <div class="mobile-menu-links flex-center col">
+      <a href="index.html#features" class="mobile-menu-link" id="mob-features"></a>
+      <a href="index.html#compare" class="mobile-menu-link" id="mob-compare"></a>
+      <a href="index.html#pricing" class="mobile-menu-link" id="mob-pricing"></a>
+      <a href="index.html#faq" class="mobile-menu-link" id="mob-faq"></a>
+    </div>
+    <button class="modal-close-btn" id="mobile-close-btn"></button>
+  </div>
+
+  <main id="main-content">
+    <section id="hero">
+      <div class="container reveal hero">
+        <h1 class="hero-title skeleton" id="hero-title" style="--sk-w: 60%; --sk-h: clamp(3.5rem, 12vw, 7.5rem); --sk-m: 0 auto 24px; --sk-r: 16px;"></h1>
+        <p class="hero-subtitle skeleton" id="hero-subtitle" style="--sk-w: 80%; --sk-h: 48px; --sk-m: 0 auto 40px;"></p>
+        <div class="hero-badge skeleton" id="hero-badge" style="--sk-w: 220px; --sk-h: 40px; --sk-m: 0 auto; --sk-r: 999px;"></div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container reveal">
+        <h2 class="section-header skeleton" id="sec-features-title" style="--sk-w: 250px; --sk-h: 40px; --sk-m: 0 auto 64px;"></h2>
+        <div class="features-grid" id="features-grid">
+          <div class="feature-card glass-panel"><div class="skeleton" style="--sk-w: 32px; --sk-h: 32px; --sk-r: 50%; --sk-m: 0 auto 24px;"></div><div class="skeleton" style="--sk-w: 60%; --sk-h: 24px; --sk-m: 0 auto 12px;"></div><div class="skeleton" style="--sk-h: 40px;"></div></div>
+          <div class="feature-card glass-panel"><div class="skeleton" style="--sk-w: 32px; --sk-h: 32px; --sk-r: 50%; --sk-m: 0 auto 24px;"></div><div class="skeleton" style="--sk-w: 70%; --sk-h: 24px; --sk-m: 0 auto 12px;"></div><div class="skeleton" style="--sk-h: 40px;"></div></div>
+          <div class="feature-card glass-panel"><div class="skeleton" style="--sk-w: 32px; --sk-h: 32px; --sk-r: 50%; --sk-m: 0 auto 24px;"></div><div class="skeleton" style="--sk-w: 50%; --sk-h: 24px; --sk-m: 0 auto 12px;"></div><div class="skeleton" style="--sk-h: 40px;"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="compare">
+      <div class="container reveal">
+        <h2 class="section-header skeleton" id="sec-compare-title" style="--sk-w: 200px; --sk-h: 40px; --sk-m: 0 auto 64px;"></h2>
+        <div class="compare-container glass-panel" id="compare-container">
+          <div class="skeleton" style="--sk-h: 200px; --sk-r: 16px;"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <div class="container reveal">
+        <div class="pricing-card">
+          <div class="pricing-label skeleton" id="pricing-label" style="--sk-w: 40%; --sk-h: 16px; --sk-m: 0 auto 24px;"></div>
+          <div class="pricing-amount skeleton" id="pricing-amount" style="--sk-w: 60%; --sk-h: 60px; --sk-m: 0 auto 40px;"></div>
+          <ul class="pricing-features" id="pricing-features">
+            <li class="skeleton" style="--sk-h: 24px; --sk-m: 0 0 12px;"></li>
+            <li class="skeleton" style="--sk-h: 24px; --sk-m: 0 0 12px;"></li>
+            <li class="skeleton" style="--sk-h: 24px;"></li>
+          </ul>
+          <a href="index.html#" class="pricing-btn tg-link skeleton" id="pricing-btn" style="--sk-w: 100%; --sk-h: 60px; --sk-m: 48px 0 0; --sk-r: 999px;"></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container reveal">
+        <h2 class="section-header skeleton" id="sec-faq-title" style="--sk-w: 180px; --sk-h: 40px; --sk-m: 0 auto 64px;"></h2>
+        <div class="faq-wrapper" id="faq-wrapper">
+          <div class="skeleton" style="--sk-h: 70px; --sk-m: 0 0 10px; --sk-r: 12px;"></div>
+          <div class="skeleton" style="--sk-h: 70px; --sk-m: 0 0 10px; --sk-r: 12px;"></div>
+          <div class="skeleton" style="--sk-h: 70px; --sk-r: 12px;"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-static container reveal">
+    <div class="footer-links flex-center">
+      <a href="index.html#privacy" class="skeleton" id="ft-privacy" style="--sk-w: 90px; --sk-h: 18px; margin: 0 16px;"></a>
+      <a href="index.html#terms" class="skeleton" id="ft-terms" style="--sk-w: 110px; --sk-h: 18px; margin: 0 16px;"></a>
+    </div>
+    <div class="footer-copy skeleton" id="footer-copy" style="--sk-w: 280px; --sk-h: 16px; --sk-m: 24px auto 0;"></div>
+  </footer>
+
+  <div class="capsule-wrapper glass-panel bottom" id="footer-capsule">
+    <a href="index.html#" class="capsule-item tg-link footer-contact-btn skeleton" id="ui-btn-contact" style="--sk-w: 185px; --sk-h: 20px;"></a>
+  </div>
+
+  <div id="modal-privacy" class="overlay">
+    <div class="custom-track" id="privacy-track"><div class="custom-thumb" id="privacy-thumb"></div></div>
+    <div class="modal-scroll-area" id="privacy-scroll-area">
+      <div class="modal-header-container">
+        <button class="modal-back-btn btn-modal-back flex-center">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"></path><polyline points="12 19 5 12 12 5"></polyline></svg> 
+          <span class="back-text skeleton" style="--sk-w: 50px; --sk-h: 16px;"></span>
+        </button>
+      </div>
+      <div class="legal-content glass-panel" id="privacy-content">
+        <div class="skeleton" style="--sk-w: 250px; --sk-h: 24px; --sk-m: 0 0 24px;"></div>
+        <div class="skeleton" style="--sk-h: 200px;"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-terms" class="overlay">
+    <div class="custom-track" id="terms-track"><div class="custom-thumb" id="terms-thumb"></div></div>
+    <div class="modal-scroll-area" id="terms-scroll-area">
+      <div class="modal-header-container">
+        <button class="modal-back-btn btn-modal-back flex-center">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"></path><polyline points="12 19 5 12 12 5"></polyline></svg> 
+          <span class="back-text skeleton" style="--sk-w: 50px; --sk-h: 16px;"></span>
+        </button>
+      </div>
+      <div class="legal-content glass-panel" id="terms-content">
+        <div class="skeleton" style="--sk-w: 250px; --sk-h: 24px; --sk-m: 0 0 24px;"></div>
+        <div class="skeleton" style="--sk-h: 200px;"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
